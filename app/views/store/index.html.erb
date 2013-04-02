@@ -140,7 +140,9 @@
 					<div class="panel">
 						<h5><%= product.title %></h5>
 						<h6 class="subheader"><span class="price" ><%= number_to_currency(product.price) %></span></h6>
+						<%= button_to 'Add to Cart', line_items_path(:product_id => product) %>
 					</div>
+					
 				</div>
 				<% end %>
 			</div>
